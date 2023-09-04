@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+
+
+html,body{
+  
+  
+ 
+   display: grid;
+   height: 70px;
+   place-items: center;
+   margin-top: 110px;
+   background-color: black;
+  
+   background-image: url('https://wallpapers.com/images/hd/wavy-red-color-lines-sqbtwm318wxbdogp.jpg');
+   background-size:cover;
+   background-repeat: no-repeat;
+   
+
+}
+#one{
+    color: antiquewhite;
+    margin-bottom: 30px;
+    
+}
+
+.wrapper{
+   
+    height: 100px;
+    width: 360px;
+    cursor: default;
+    background:linear-gradient(135deg,#37270f,#7b3b22,#5eab43);
+    border-radius: 10px;
+    animation: animate 1.5s linear infinite;
+
+
+}
+.wrapper .display,
+.wrapper span{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.wrapper .display{
+    background: #131212;
+    
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    height: 85px;
+    width: 345px;
+    text-align: center;
+    
+}
+.wrapper .display #clock{
+    line-height: 85px;
+  
+    font-size: 50px;
+    font-weight: 600;
+    background:linear-gradient(135deg,#42432b,#839246,#a13c3c);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.wrapper span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    border-radius: 10px;
+}
+
+.wrapper span:first-child{
+    filter: blur(10px);
+}
+.wrapper span:last-child{
+    filter: blur(20px);
+}
